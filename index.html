@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/3cd2c644aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="project">
+        <header class="header-wrapper">
+            <div class="header-top">
+                <div class="header-inner">
+                    <div class="logo-delivery">
+                        <a href="#">
+                            <img src="./assets/img/lenin.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="logo-shop">
+                        <a href="#">
+                            <img src="./assets/img/logopetshop.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="header-action">
+                        <a href="#" class="sign-in">Đăng nhập</a>
+                        <div class="language">
+                            <a href="#" class="vietnam">VN</a>
+                            <a href="#" class="english">EN</a>
+                        </div>
+                        <div class="cart">
+                            <!-- <a onclick="showcart()" class="cart-shopping">Giỏ hàng <i class="fa-solid fa-cart-shopping"></i><span>0</span></a> -->
+                            <a onclick="showcart()">
+                                <i class="fa-solid fa-cart-shopping"></i><span id="countsp">0</span>
+                            </a>
+                        </div>
+                        <!-- <div id="showcart">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Hình</th>
+                                        <th>Tên sản phẩm</th>
+                                        <th>Đơn giá</th>
+                                        <th>Số lượng</th>
+                                        <th>Tổng tiền:</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="mycart">
+                                    
+                                </tbody>
+                            </table>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="header-main">
+                <ul id="main-nav">
+                    <li><a href="#">TRANG CHỦ</a></li>
+                    <li><a href="#">CHÓ</a></li>
+                    <li><a href="#">MÈO</a></li>
+                    <li><a href="#">PHỤ KIỆN CHO CHÓ</a></li>
+                    <li><a href="#">PHỤ KIỆN CHO MÈO</a></li>
+                    <li><a href="#">TIN TỨC</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="main-container">
+            <div class="container">
+                <div class="main">
+                    <img src="https://i.imgflip.com/xl2ha.jpg?a471000" alt="" class="img-feature">
+                    <div class="control prev"><i class="fas fa-chevron-left"></i></div>
+                    <div class="control next"><i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div class="list-img">
+                    <div><img src="https://i.imgflip.com/xl2ha.jpg?a471000" alt=""></div>
+                    <div><img src="https://topwat.com/wp-content/uploads/2021/11/giong-cho-de-nuoi-1-900x400.jpg" alt=""></div>
+                    <div><img src="https://u6wdnj9wggobj.vcdn.cloud/media/mgs_blog/n/u/nu_i_th_c_ng_4__1.jpg" alt=""></div>
+                    <div><img src="https://file.hstatic.net/200000203661/article/nen_7cbda42dabb54660bb23ceb3c1c7cd1c_1024x1024.png" alt=""></div>
+                </div>
+            </div>
+    
+            <div class="container">
+                <h2 class="center">Chó</h2>
+                <div class="dogitems">
+                    <div class="row">
+                        <div class="col col-five items">
+                            <img src="./assets/img/alaska.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Alaska</h3>
+                                <div class="infor">
+                                    <p id="newprice">2.150.000₫</p>
+                                    <p>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        Đã bán 2
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="col col-five items">
+                            <img src="./assets/img/golden.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Golden</h3>
+                            <div class="infor">
+                                <p id="newprice">2.150.000₫</p>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    Đã bán 2
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-five items">
+                            <img src="./assets/img/husky.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Husky</h3>
+                            <div class="infor">
+                                <p id="newprice">2.150.000₫</p>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    Đã bán 2
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-five items">
+                            <img src="./assets/img/lapxuong.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Lạp xưởng</h3>
+                            <div class="infor">
+                                <p id="newprice">2.150.000₫</p>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    Đã bán 2
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-five items">
+                            <img src="./assets/img/pug.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Pug</h3>
+                            <div class="infor">
+                                <p id="newprice">2.150.000₫</p>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    Đã bán 2
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="showall center">
+                    <a href="#"> Xem tất cả các giống Chó <i class="fas fa-chevron-right"></i> </a>
+                </div>
+            </div>
+
+            <div class="container">
+                <h2 class="center">Mèo</h2>
+                <div class="dogitems">
+                    <div class="row">
+                        <div class="col col-five items">
+                            <img src="./assets/img/alaska.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Alaska</h3>
+                                <div class="infor">
+                                    <p id="newprice">2.150.000₫</p>
+                                    <p>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        Đã bán 2
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="col col-five items">
+                            <img src="./assets/img/golden.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Alaska</h3>
+                            <div class="infor">
+                                <p id="newprice">2.150.000₫</p>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    Đã bán 2
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-five items">
+                            <img src="./assets/img/husky.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Alaska</h3>
+                            <div class="infor">
+                                <p id="newprice">2.150.000₫</p>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    Đã bán 2
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-five items">
+                            <img src="./assets/img/lapxuong.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Alaska</h3>
+                            <div class="infor">
+                                <p id="newprice">2.150.000₫</p>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    Đã bán 2
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-five items">
+                            <img src="./assets/img/pug.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Alaska</h3>
+                            <div class="infor">
+                                <p id="newprice">2.150.000₫</p>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    Đã bán 2
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="showall center">
+                    <a href="#"> Xem tất cả các giống Mèo <i class="fas fa-chevron-right"></i> </a>
+                </div>
+            </div>
+
+            <div class="container">
+                <h2 class="center">THỨC ĂN & DINH DƯỠNG CHÓ MÈO</h2>
+                <div class="dogitems">
+                    <div class="row">
+                        <div class="col col-five items">
+                            <img src="./assets/img/alaska.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Alaska</h3>
+                                <div class="infor">
+                                    <p id="newprice">2.150.000₫</p>
+                                    <p>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        Đã bán 2
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="col col-five items">
+                            <img src="./assets/img/golden.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Alaska</h3>
+                            <div class="infor">
+                                <p id="newprice">2.150.000₫</p>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    Đã bán 2
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-five items">
+                            <img src="./assets/img/husky.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Alaska</h3>
+                            <div class="infor">
+                                <p id="newprice">2.150.000₫</p>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    Đã bán 2
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-five items">
+                            <img src="./assets/img/lapxuong.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Alaska</h3>
+                            <div class="infor">
+                                <p id="newprice">2.150.000₫</p>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    Đã bán 2
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-five items">
+                            <img src="./assets/img/pug.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Alaska</h3>
+                            <div class="infor">
+                                <p id="newprice">2.150.000₫</p>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    Đã bán 2
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="showall center">
+                    <a href="#"> Xem tất cả sản phẩm <i class="fas fa-chevron-right"></i> </a>
+                </div>
+            </div>
+
+            <div class="container">
+                <h2 class="center">SẢN PHẨM DÀNH CHO THÚ CƯNG</h2>
+                <div class="dogitems">
+                    <div class="row">
+                        <div class="col col-five items">
+                            <img src="./assets/img/alaska.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Alaska</h3>
+                                <div class="infor">
+                                    <p id="newprice">2.150.000₫</p>
+                                    <p>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        Đã bán 2
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="col col-five items">
+                            <img src="./assets/img/golden.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Alaska</h3>
+                            <div class="infor">
+                                <p id="newprice">2.150.000₫</p>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    Đã bán 2
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-five items">
+                            <img src="./assets/img/husky.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Alaska</h3>
+                            <div class="infor">
+                                <p id="newprice">2.150.000₫</p>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    Đã bán 2
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-five items">
+                            <img src="./assets/img/lapxuong.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Alaska</h3>
+                            <div class="infor">
+                                <p id="newprice">2.150.000₫</p>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    Đã bán 2
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-five items">
+                            <img src="./assets/img/pug.jpg" class="pic-dog" alt="">
+                            <h3 class="producttittle center">Alaska</h3>
+                            <div class="infor">
+                                <p id="newprice">2.150.000₫</p>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    Đã bán 2
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="showall center">
+                    <a href="#"> Xem tất cả sản phẩm <i class="fas fa-chevron-right"></i> </a>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col1 col-half bannerbottom">
+                        <img src="./assets/img/banner.jpg" />
+                    </div>
+                    <div class="col1 col-half infor-banner">
+                        <h3 style="padding-top: 100px;font-size: 24px;">PHỤ KIỆN CÔNG NGHỆ DÀNH CHO THÚ CƯNG</h3>
+                        <p style="padding-top: 30px;font-size: 18px;letter-spacing: 1px;line-height: 1.5;">YOLO Pet Shop là công ty chuyên phân phối các sản phẩm đồ chơi, phụ kiện công nghệ 4.0 dành cho thú cưng chính hãng tại Việt Nam.</p>
+                        <p style="padding-top: 30px;font-size: 18px;letter-spacing: 1px;line-height: 1.5;"">Với các thương hiệu nổi bật như: Petkit, Petree, Meet, Catlink…</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div style="padding-bottom: 40px;" class="container">
+                <h2 class="center">TIN TỨC</h2>
+                <div class="dogitems">
+                    <div class="row">
+                        <div class="col col-three items">
+                            <img src="https://go.yolo.vn/wp-content/uploads/2022/06/top-cac-loai-thuc-pham-nguy-hiem-cho-cho.png" class="pic-dog" alt="">
+                            <h3 class="producttittle">13 loại thực phẩm nguy hiểm cho chó-không để chó ăn phải</h3>
+                        </div>
+                        <div class="col col-three items">
+                            <img src="https://go.yolo.vn/wp-content/uploads/2022/06/nhung-loai-thuc-pham-gay-nguy-hiem-cho-meo.png" class="pic-dog" alt="">
+                            <h3 class="producttittle">13 loại thực phẩm nguy hiểm cho chó-cần lưu ý tránh xa</h3>
+                        </div>
+                        <div class="col col-three items">
+                            <img src="https://go.yolo.vn/wp-content/uploads/2022/06/ba-cho-la-gi.png" class="pic-dog" alt="">
+                            <h3 class="producttittle">Bả chó là gì?Tác hại và cách chữa trị khi trúng bả chó</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="showall center">
+                    <a href="#"> Xem tất cả Tin Tức <i class="fas fa-chevron-right"></i> </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="div-footer">
+                <div class="row-1">
+                    <div class="col-inner">
+                        <div class="logo">
+                            <img src="https://mauweb.monamedia.net/remaxvn/wp-content/uploads/2019/07/verify.png" style="width:40px">
+    
+                        </div>
+                        <div class="logo-text">
+                        <h5 >Chính hãng</h5>
+                        <p>Sản phẩm chính hãng</p>
+                        </div>
+                    </div>
+                    <div class="col-inner">
+                        <div class="logo">
+                            <img src="https://mauweb.monamedia.net/remaxvn/wp-content/uploads/2019/07/truck.png" style="width:40px">
+    
+                        </div>
+                        <div class="logo-text">
+                        <h5 >63 tỉnh thành</h5>
+                        <p>Giao hàng tận nơi</p>
+                        </div>
+                    </div>
+                    <div class="col-inner">
+                        <div class="logo">
+                            <img src="https://mauweb.monamedia.net/remaxvn/wp-content/uploads/2019/07/box.png" style="width:40px">
+    
+                        </div>
+                        <div class="logo-text">
+                        <h5 >Bảo hành</h5>
+                        <p>Bảo hành dài hạn</p>
+                        </div>
+                    </div>
+                    <div class="col-inner">
+                        <div class="logo">
+                            <img src="https://mauweb.monamedia.net/remaxvn/wp-content/uploads/2019/07/info-round-button.png" style="width:40px">
+    
+                        </div>
+                        <div class="logo-text">
+                        <h5 >Hướng dẫn</h5>
+                        <p>Mua hàng online</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row-2">
+                    <div class="col-inner2">
+                        <h6><b>tên web ...</b></h6>
+                        <br>
+                      <p><a href="">Giới thiệu</a></p>
+                      <p><a href="">Khách hàng thân thiết</a></p>
+                      <p><a href="">Chính sách bảo hành</a></p>
+                      <p><a href="">Hướng dẫn mua hàng</a></p>
+                    
+                    </div>
+                    <div class="col-inner2">
+                        <h6><b>liên hệ</b></h6>
+                        <br>
+                      <p>Mua hàng :&nbsp;&nbsp;&nbsp;<a href=""><b>1900 110 110</b></a>&nbsp;&nbsp;&nbsp;(8h-22h)</p>
+                      <p>Khiếu nại :&nbsp;&nbsp;&nbsp;<a href=""> <b>1900 110 110</b></a>&nbsp;&nbsp;&nbsp;(8h-22h)</p>
+                      <p>Trả hàng :&nbsp;&nbsp;&nbsp;&nbsp;<a href=""> <b>1900 110 110</b></a>&nbsp;&nbsp;&nbsp;(8h-22h)</p>
+                      <p>Bảo hành :&nbsp;&nbsp;&nbsp;<a href=""> <b>1900 110 110</b></a>&nbsp;&nbsp;&nbsp;(8h-22h)</p>
+                    
+                    </div>
+                    <div class="col-inner2">
+                        <h6><b>địa chỉ cửa hàng</b></h6>
+                        <br>
+                      <p>Chi nhánh 1 : Sư Vạn Hạnh</p>
+                      <p>Chi nhánh 2 : Cách mạng tháng 8</p>
+                      <p>Chi nhánh 3 : Tô Hiến Thành</p>
+                      <p>Chi nhánh 4 : Lý Thường Kiệt</p>
+                    
+                    </div>
+                    <div class="col-inner2">
+                        <h6><b>được chấp nhận</b></h6>
+                        <br>
+                      <p><img src="https://mauweb.monamedia.net/remaxvn/wp-content/uploads/2019/07/20150827110756-dathongbao.png" style="width:130px"></p>
+                      <p><img src="https://mauweb.monamedia.net/remaxvn/wp-content/uploads/2019/07/dmca_protected_16_120.png" style="width: 130px"></p>
+       
+                    
+                    </div>
+                </div>
+                <div class="copyright">
+                    © Bản quyền thuộc về ANH EM CODE DẠO
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="petshop.js"></script>
+</body>
+</html>
